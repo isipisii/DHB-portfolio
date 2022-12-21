@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,600&display=swap');
+
+::-webkit-scrollbar{
+  width: .5rem;
+  padding: 0 .1rem;
+}
+::-webkit-scrollbar-track{
+  background-color: #000000a2;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgba(232, 231, 231, 0.877);
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(232, 231, 231, 0.507);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("pattern.svg");
+    font-family: 'Poppins', sans-serif;
+}
+
+.head-section{
+  background: rgb(2,2,2);
+  background: -moz-linear-gradient(183deg, rgba(2,2,2,0.9756945014333859) 9%, rgba(1,1,1,0.9336776947106968) 26%, rgba(1,1,1,0.9) 46%, rgba(1,1,1,0.85) 66%, rgba(0,0,0,0.8) 86%);
+  background: -webkit-linear-gradient(183deg, rgba(2,2,2,0.9756945014333859) 9%, rgba(1,1,1,0.9336776947106968) 26%, rgba(1,1,1,0.9) 46%, rgba(1,1,1,0.85) 66%, rgba(0,0,0,0.8) 86%);
+  background: linear-gradient(183deg, rgba(2,2,2,0.9756945014333859) 9%, rgba(1,1,1,0.9336776947106968) 26%, rgba(1,1,1,0.9) 46%, rgba(1,1,1,0.85) 66%, rgba(0,0,0,0.8) 86%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020202",endColorstr="#000000",GradientType=1);
+}
+
+.sec-container, .ftr-container, .head-sec-container{
+  max-width:1300px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.back-arrow{
+  position: absolute;
+  top: 0;
+  margin: 1rem 0 0 1rem;
+  left: 0;
+}
+.back-arrow i{
+  font-size: clamp(1.2rem, 1.0041rem + 0.9796vw, 1.8rem);
+  color: white;
+  transition: .3s;
+}
+.back-arrow i:hover{
+  transform: scale(.9);
+  color: rgba(255, 255, 255, 0.509);
+}
+
+h1{
+    font-weight: bold;
+    font-size: clamp(3rem, 2.6735rem + 1.6327vw, 4.5rem);
+    text-align: center;
+    color: white;
+}
+
+section{
+    height: auto;
+    padding: 4rem 0;
+}
+
+.row {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    padding: 0 4px;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    flex: 25%;
+    width: 60%;
+    padding: 0 5px;
+  }
+  .column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+    transition: .3s;
+  }
+  .column img:hover {
+    filter:brightness(70%);
+  }
+  @media (max-width: 800px) {
+    .row{
+        width: 100%;
+    }
+
+    #col3{
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .2rem;
+      justify-content: space-around;
+    }
+    #col3 img{
+      width: 48%;
+    }
+    .column {
+      flex: 40%;
+      max-width: 50%;
+    }
+  }
+  
+
+  footer{
+    background: rgb(2,2,2);
+    background: -moz-linear-gradient(138deg, rgba(2,2,2,0.9756945014333859) 9%, rgba(1,1,1,0.95) 26%, rgba(1,1,1,0.9) 46%, rgba(1,1,1,0.85) 66%, rgba(0,0,0,0.8) 86%);
+    background: -webkit-linear-gradient(138deg, rgba(2,2,2,0.9756945014333859) 9%, rgba(1,1,1,0.95) 26%, rgba(1,1,1,0.9) 46%, rgba(1,1,1,0.85) 66%, rgba(0,0,0,0.8) 86%);
+    background: linear-gradient(138deg, rgba(2,2,2,0.9756945014333859) 9%, rgba(1,1,1,0.95) 26%, rgba(1,1,1,0.9) 46%, rgba(1,1,1,0.85) 66%, rgba(0,0,0,0.8) 86%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020202",endColorstr="#000000",GradientType=1);
+  }
+  .footer-container{
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+  }
+  footer i{
+    font-size: 1.5rem;
+  }
+  footer h3{
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+  footer a{
+    color: white;
+    font-size: 1.8rem;
+  }
+  footer p{
+    font-size: .6rem;
+    font-weight: 300;
+  }
+  @media (max-width:600px){
+    footer h3{
+    font-size: .9rem;
+  }
+    footer p{
+        font-size: .5rem;
+    }
+  }
+
+  .arrow-up{
+    position: absolute;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    margin: 0 1rem 1rem 0;
+    transition: .3s;
+    opacity: 0;
+  }
+  .arrow-up i{
+    padding: .85rem 1rem;
+    border: 2px solid black;
+    border-radius: 100%;
+    font-size: 1rem;
+    color: black;
+    transition: .3s;
+  }
+  .arrow-up i:hover{
+    background-color: black;
+    color: white;
+  }
