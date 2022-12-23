@@ -542,7 +542,7 @@ input, textarea{
   font-size: clamp(0.8rem, 0.7347rem + 0.3265vw, 1rem);
 }
 
-.linkedin a{
+.linkedin a, .email a{
   text-decoration: none;
   color: var(--secondary);
 }
