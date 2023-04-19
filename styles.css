@@ -3,6 +3,7 @@
 :root{
     --primary: #ffff;
     --secondary: #000000;
+    --red: #ed2024;
     --paragraphs: #1E1E1E;
 }
 ::-webkit-scrollbar{
@@ -65,7 +66,7 @@ nav{
     display: none;
   }
   .logo img{
-    width: 4rem;
+    width: 3.5rem;
   }
   .nav-items {
     display: flex;
@@ -96,7 +97,7 @@ nav{
     content: "";
     display: block;
     height: 2px;
-    background: var(--secondary);
+    background: var(--red);
     width: 0%;
     transition: all ease-in-out 150ms;
   }
@@ -189,6 +190,12 @@ nav{
     padding-left: 1rem;
     border-left: 3px solid var(--secondary);
     margin-bottom: 3rem;
+}
+
+.hero-text h1 .highlight{
+  background: -webkit-linear-gradient(left, var(--red), #4d2626);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /* View CV button */
 .hero-section i{
