@@ -420,6 +420,7 @@ nav{
 
     .proj-container{
         flex-direction: column;
+        padding: 0;
     }
 
     .proj-left, .proj-right, .proj-bottom{
