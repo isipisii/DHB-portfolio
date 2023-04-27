@@ -341,6 +341,10 @@ nav{
     width: 45%;
 }
 
+.proj-bottom{
+  width: 91%;
+}
+
 .proj-right{
     display: flex;
     flex-direction: column;
@@ -348,10 +352,12 @@ nav{
 }
 
 .proj-container{
+  padding: 0 3rem 0 3rem ;
    display: flex;
    justify-content: center;
    align-items: center;
    gap: 1rem;
+   flex-wrap: wrap;
 }
 
 .proj{
@@ -409,13 +415,14 @@ nav{
 .proj-name:hover{
   opacity: 1;
 }
+
 @media (max-width: 1023px){
 
     .proj-container{
         flex-direction: column;
     }
 
-    .proj-left, .proj-right{
+    .proj-left, .proj-right, .proj-bottom{
         width: 100%;
     }
 }
